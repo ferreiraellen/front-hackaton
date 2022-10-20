@@ -1,0 +1,35 @@
+#img-bg {
+    background-image: url('https://i.imgur.com/p1WUMVp.png');
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+     font-family: "Lucida Console", "Lucida Console", monospace;
+     font-size: 18px;
+    
+}
+
+.bg{
+    background-color: #90caf9;
+}
+
+.img-backend {
+    background-image: url('https://i.imgur.com/FJo2T5q.png');
+    height: 140px ;
+    width: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-frontend {
+    background-image: url('https://i.imgur.com/0imVdnv.png');
+    height: 140px ;
+    width: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
