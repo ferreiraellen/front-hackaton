@@ -18,27 +18,27 @@ export class TemaService {
   }
 
   getAllTema(): Observable<Tema[]>{
-    return this.http.get<Tema[]>('https://reciclohack.netlify.app/tema', this.token)
+    return this.http.get<Tema[]>('https://hackreciclo.netlify.app/tema', this.token)
   }
 
   getByIdTema(id:number): Observable<Tema>{
-    return this.http.get<Tema>(`https://reciclohack.netlify.app/tema/${id}`, this.token)
+    return this.http.get<Tema>(`https://hackreciclo.netlify.app/tema/${id}`, this.token)
   }
   
 
   getByNomeTema(titulo: string): Observable<Tema[]>{
-    return this.http.get<Tema[]>(`https://reciclohack.netlify.app/tema/titulo/${titulo}`, this.token)
+    return this.http.get<Tema[]>(`https://hackreciclo.netlify.app/tema/titulo/${titulo}`, this.token)
   }
 
   postTema(tema: Tema): Observable<Tema>{
-    return this.http.post<Tema>('https://reciclohack.netlify.app/tema', tema, this.token)
+    return this.http.post<Tema>('https://hackreciclo.netlify.app/tema', tema, this.token)
   }
 
   putTema(tema: Tema): Observable<Tema>{
-    return this.http.put<Tema>('https://reciclohack.netlify.app/tema', tema, this.token)
+    return this.http.put<Tema>('https://hackreciclo.netlify.app/tema', tema, this.token)
   }
   deleteTema(id: number){
-    return this.http.delete(`https://reciclohack.netlify.app/tema/${id}`, this.token)
+    return this.http.delete(`https://hackreciclo.netlify.app/tema/${id}`, this.token)
   }
 
 

@@ -16,19 +16,19 @@ export class AuthService {
   ) { }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
-    return this.http.post<UserLogin>('https://reciclohack.netlify.app/usuarios/logar', userLogin)
+    return this.http.post<UserLogin>('https://hackreciclo.netlify.app/usuarios/logar', userLogin)
   }
 
   cadastrar(user: User): Observable<User>{
-    return this.http.post<User>('https://reciclohack.netlify.app/usuarios/cadastrar', user)
+    return this.http.post<User>('https://hackreciclo.netlify.app/usuarios/cadastrar', user)
   }
 
   atualizar(user: User): Observable<User>{
-    return this.http.put<User>('https://reciclohack.netlify.app/usuarios/atualizar', user)
+    return this.http.put<User>('https://hackreciclo.netlify.app/usuarios/atualizar', user)
   }
 
   getByIdUser(id: number): Observable<User>{
-    return this.http.get<User>(`https://reciclohack.netlify.app/usuarios/${id}`)
+    return this.http.get<User>(`https://hackreciclo.netlify.app/usuarios/${id}`)
   }
 
   logado(){
